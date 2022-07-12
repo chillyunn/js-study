@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var button = document.getElementById("button")
+            button.onclick = function displayTime() {
+                var d = new Date();
+                var timer = setInterval(function(){
+                    console.log(d.toLocaleString());
+                },200);
+                clearInterval(timer)
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="click" id="button">
+</body>
+
+</html>
